@@ -19,6 +19,9 @@ main{
     border-radius: 5px;
     margin: 5%;
 }
+.nft-img:hover{
+    
+}
 .main-p{
     font-size: 15px;
     font-weight: 200;
@@ -35,6 +38,10 @@ h2{
     text-align: left;
     color: hsl(0, 0%, 100%);
 }
+h2:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
 div{
     display: flex;
 }
@@ -42,6 +49,8 @@ div{
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 1em;
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
 }
 .left-div{
     margin-right: auto;
@@ -50,4 +59,29 @@ div{
 .right-div{
     margin-left: auto;
     color: hsl(215, 51%, 70%);
+}
+.bottom-div{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.bottom-div img{
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.bottom-div p{
+    color:hsl(215, 51%, 70%);
+    font-size: 12px;
+    font-weight: 200;
+    margin-left: 20px;
+}
+span{
+    color:hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+span:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
 }
