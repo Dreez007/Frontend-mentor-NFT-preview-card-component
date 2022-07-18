@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 body{
+    display: flex;
+    height: 100vh;
     background-color: hsl(217, 54%, 11%);
     font-family: 'Outfit', sans-serif;
 }
@@ -14,14 +16,34 @@ main{
     border-radius: 10px;
     margin: auto;
 }
-.nft-img{
+.nft-container{
     width: 90%;
     border-radius: 5px;
     margin: 5%;
+    position: relative;
 }
-.nft-img:hover{
-    
+.nft-container .nft-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
+/* styling for hover property on nft image */
+.hover-cover{
+    position: absolute;
+    display: flex;
+    background-color: hsl(178, 100%, 50%, 40%);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    top: 0;
+    z-index: 999;
+    opacity: 0;
+}
+.view-icon{
+    height: 40px;
+    margin: auto;
+}
+/* end of styling for hover property on nft image */
 .main-p{
     font-size: 15px;
     font-weight: 200;
@@ -37,10 +59,6 @@ h2{
     margin-right: 5%;
     text-align: left;
     color: hsl(0, 0%, 100%);
-}
-h2:hover{
-    color:hsl(178, 100%, 50%);
-    cursor: pointer;
 }
 div{
     display: flex;
@@ -81,7 +99,17 @@ span{
     color:hsl(0, 0%, 100%);
     font-weight: 400;
 }
+/* active states styling */
+.hover-cover:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+h2:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
 span:hover{
     color:hsl(178, 100%, 50%);
     cursor: pointer;
 }
+/* end of active states styling */
