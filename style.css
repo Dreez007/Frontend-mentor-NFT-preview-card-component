@@ -113,3 +113,15 @@ span:hover{
     cursor: pointer;
 }
 /* end of active states styling */
+
+/* media queries */
+@media (max-width:500px){
+    main{
+        width: 90%;
+    }
+}
+@media (min-width: 501px) and (max-width:1000px){
+    main{
+        width: 40%;
+    }
+}
